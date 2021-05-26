@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  color: rgb(3, 51, 49);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  background: rgb(241, 201, 201);
   align-items: center;
+  height: 7vh;
+}
+
+.nav ul{
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+
+}
+
+li{
+  list-style: none;
+}
+
+.items-container{
+  width: 90%;
+  margin: auto;
+}
+
+.item-container{
+  width: 100%;
+  height: 10vh;
+  background: rgb(197, 94, 94);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+
+.item-name{
+  width: 50%;
+  padding: 1rem;
+}
+
+.item-cost, .item-rarity{
+  width: 25%;
+}
+
+/* item info page style */
+
+.item-detail{
+  height: 93vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-image-container{
+  height: 70%;
+  width: 70%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.more-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(242, 160, 245);
 }
